@@ -9,6 +9,8 @@ const { targetList } = require("../../src/cli-flags-helper");
 targetList.delete("babel");
 targetList.add("@babel/standalone");
 
+targetList.delete("empty");
+
 // postcss requires autoprefixer and postcss-nested
 targetList.add("autoprefixer");
 targetList.add("postcss-nested");
